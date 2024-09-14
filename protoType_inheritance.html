@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle</title>
+<script>
+  
+  class Rectangle{
+    constructor(width,height,name){
+     this.width=width
+     this.height=height
+    }
+   name='hhhh'
+   hi= function (params) {
+    console.log('hi');
+   }
+    draw(){
+        console.log(
+            'hello I am a function'
+        )
+        console.log(this)
+    }
+  }
+
+
+  let a=new Rectangle(88,99)
+  console.log(a)
+
+  function NewRectangle(width,height,name) {
+           this.width=width
+           this.height=height
+           this.name=name
+  }
+
+  NewRectangle.prototype.draw={
+     function (){
+        console.log('I am draw function ')
+        console.log(this)
+    }
+  }
+
+//   let newrect1=new NewRectangle(55,76,'Nayeem')
+//   console.log(newrect1)
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
